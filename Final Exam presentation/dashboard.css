@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1.2rem 0px;
+}
+
+.header, 
+.header-left, 
+.header-middle, 
+.header-right {
+    display: flex;
+}
+
+.header-left {
+    padding-left: 40px;
+    align-items: center;
+    flex: 1;
+}
+
+.header-left .name {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 1.875rem;
+    color: rgb(21, 29, 72);
+}
+
+.logo {
+    background-color: rgb(93, 95, 239);
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.logo i {
+    font-size: 25px;
+}
+
+.header-middle {
+    align-items: center;
+    padding-left: 2rem;
+    flex: 2;
+}
+
+.header-middle .dashboard {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: rgb(21, 29, 72);
+}
+
+.header-middle .input-search-box {
+    position: relative;
+    margin-left: 2rem;
+}
+
+.header-middle .input-search-box i {
+    position: absolute;
+    top: 0.8rem;
+    left: 1rem;
+    font-size: 1.8rem;
+}
+
+.header-middle .search-box {
+    height: 3.6rem;
+    width: 25rem;
+    padding-left: 3.5rem;
+    font-size: 1.2rem;
+    background-color: rgb(242, 242, 242);
+    border-radius: 15px;
+    border: none;
+}
+
+.header-right {
+    align-items: center;
+    padding-left: 2.5rem;
+    flex: 1;
+}
+
+.nationality, .notification {
+    margin-right: 40px;
+}
+
+.nationality i, .notification i {
+    font-size: 1.5rem;
+}
+
+.notification i {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+}
+
+.notification {
+    background-color: rgb(255, 248, 236);
+    color: rgb(255, 197, 91);
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.notification .dot {
+    color: red;
+    position: absolute;
+    top: -3rem;
+    right: 0px;
+    font-size: 4rem;
+}
+
+.header-right .profile-picture img {
+    width: 5rem;
+}
+
+.body{
+    background-color: rgb(222, 222, 222);
+    height: 500px;
+    width: 100%;
+}
+
+.sidebar-container{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top:7.5rem;
+    bottom: 0;
+    left:0;
+    width: 27%;
+    overflow-y: auto;
+
+    padding: 2.5rem;
+}
+
+.sidebar{
+    display: flex;
+    align-items: center;
+    padding: 20px 22px;
+    
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+.sidebar:hover{
+    transition: all .2s;
+    background-color: rgb(93, 95, 239);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.active{
+    background-color: rgb(93, 95, 239);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.sidebar i{
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.sidebar p{
+    font-size: 20px;
+}
+
+.card {
+    margin-top: 10rem;
+    background-color: #5465FF;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 240px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.logo img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: white;
+    color: #5465FF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e0e0e0;
+}
+
+.hero{
+    width: 73%;
+    height: 100%;
+    background-color: rgb(214, 214, 214);
+    margin-left: 27%;
+    padding-top: 12%;
+    padding-left: 20px;
+}
+
+.sale-container{
+    background-color: white;
+    width: 97%;
+    padding: 28px;
+    border-radius: 20px;
+}
+
+.sale-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: rgb(15, 54, 89);
+}
+
+.sub-title{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.875;
+    color: rgb(115, 119, 145);
+}
+
+.export-container button{
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(15, 54, 89);
+    font-weight: 500;
+    min-width: 64px;
+    padding: 6px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid rgb(15, 54, 89);
+}
+
+.export-container button i{
+    margin-right: 7px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+}
+
+.sales-card {
+    background-color: #ffe6e6;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    padding: 20px;
+    text-align: left;
+    color: #333;
+}
+
+.icon{
+    background-color: #ff6b6b;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon .icon-container {
+    width: 22px;
+    margin-top: 14px;
+    padding: 2px 4px;
+    margin-bottom: 15px;
+    background-color: white;
+    color: #ff6b6b;
+    border-radius: 3px;
+}
+
+.amount {
+    font-size: 22px;
+    color: #1e1e1e;
+    margin: 0;
+}
+
+.title {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.growth {
+    font-size: 14px;
+    color: #5465ff;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body style="height: 1000px;">
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">
+                <i class="fa-brands fa-slack"></i>
+            </div>
+            <div class="name">
+                Dabang
+            </div>
+        </div>
+
+        <div class="header-middle">
+            <div class="dashboard">
+                Dashboard
+            </div>
+            <div class="input-search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="search-box" placeholder="Search here...">
+            </div>
+            
+        </div>
+
+        <div class="header-right">
+            <div class="nationality">
+                <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <div class="notification">
+                <div class="dot">.</div>
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="profile-picture">
+                <img src="image/icons/profile.jpg" alt="profile-picture">
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar-container">
+        <div class="sidebar active">
+            <i class="fa-solid fa-table-columns"></i>
+            <p>Dashboard</p>
+        </div>
+
+        <div class="sidebar">
+            <i class="fa-solid fa-shield-virus"></i>
+            <p>Authenication</p>
+        </div>
+
+        <div class="sidebar">
+            <i class="fa-solid fa-chart-simple"></i>
+            <p>Leaderboard</p>
+        </div>
+
+        <div class="sidebar">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>Order</p>
+        </div>
+
+        <div class="sidebar">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>Products</p>
+        </div>
+
+        <div class="sidebar">
+            <i class="fa-solid fa-chart-line"></i>
+            <p>Scale Report</p>
+        </div>
+
+        <div class="sidebar">
+            <i class="fa-regular fa-message"></i>
+            <p>Messages</p>
+        </div>
+
+        <div class="sidebar">
+            <i class="fa-solid fa-gear"></i>
+            <p>Setting</p>
+        </div>
+
+        <div class="sidebar">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <p>Sign Out</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-content">
+                <div class="logo">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h2 class="title">Dabang Pro</h2>
+                <p class="description">Get access to all features on tetumbas</p>
+                <button class="cta-button">Get Pro</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="sale-container">
+            <div class="sale-header">
+                <div class="title">
+                    Today's Sales
+                    <div class="sub-title">
+                        Sales Summary
+                    </div>
+                </div>
+
+                <div class="export-container">
+                    <button>
+                        <i class="fa-solid fa-upload"></i>
+                        Export
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="sales-card">
+                    <div class="icon">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <h2 class="amount">$1k</h2>
+                        <p class="title">Total Sales</p>
+                        <p class="growth">Last day +8%</p>
+                    </div>
+                </div>
+                
+                <div class="sales-card">
+                    <div class="icon">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <h2 class="amount">300</h2>
+                        <p class="title">Total Order</p>
+                        <p class="growth">Last day +5%</p>
+                    </div>
+                </div> 
+
+                <div class="sales-card">
+                    <div class="icon">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <h2 class="amount">5</h2>
+                        <p class="title">Sold</p>
+                        <p class="growth">Last day +1.2%</p>
+                    </div>
+                </div> 
+
+                <div class="sales-card">
+                    <div class="icon">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <h2 class="amount">8</h2>
+                        <p class="title">Customers</p>
+                        <p class="growth">Last day +0.5%</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="chart">
+            <div class="line-chart">
+                <div style="width: 900px; height: 400px;">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js" integrity="sha512-7DgGWBKHddtgZ9Cgu8aGfJXvgcVv4SWSESomRtghob4k4orCBUTSRQ4s5SaC2Rz+OptMqNk0aHHsaUBk6fzIXw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="line-chart.js"></script>
+</body>
+</html>
